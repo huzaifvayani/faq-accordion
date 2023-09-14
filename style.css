@@ -1,0 +1,195 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: hsl(240, 73%, 65%);
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+.container{
+    background-color: #fff;
+    width: 900px;
+    height: 780px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 30px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.image-container{
+    background-image: url("images/bg-pattern-desktop.svg");
+    background-repeat: no-repeat;
+    background-position-x: -200px;
+    background-position-y: -100px;
+    background-size: 200%;
+    width: 400px;
+}
+.image-container .images{
+    width: 100%;
+    height: 100%;
+    background-image: url("images/illustration-woman-online-desktop.svg");
+    background-repeat: no-repeat;
+    background-position-x: -90px;
+    background-position-y: 50%;
+}
+.box{
+    width: 160px;
+    height: 160px;
+    margin-left: -80px;
+    margin-top: 310px;
+}
+
+.text{
+    width: 500px;
+    margin-left: 70px;
+}
+
+.head-01{
+    font-size: 2rem;
+    color: #222138;
+    margin-top: 50px;
+}
+.faq-1{
+    border-bottom: 1px solid #f2f2f2;
+    height: 120px;
+    margin-right: 70px;
+}
+.faq-2, .faq-3, .faq-4, .faq-5{
+    border-bottom: 1px solid #f2f2f2;
+    height: 105px;
+    margin-right: 70px;
+    margin-top: 30px;
+}
+.flexing{
+    display: flex;
+    justify-content: space-between;
+}
+.head-02{
+    font-size: .9rem;
+    color: hsl(240, 6%, 50%);
+    font-weight: 400;
+    margin-top: 34px;
+}
+.head-03{
+    font-size: .9rem;
+    color: hsl(240, 6%, 50%);
+    font-weight: 400;
+    margin-top: 15px;
+}
+.head-2{
+    color: #161420;
+    font-weight: 600;
+}
+.btn{
+    background-image: url("images/icon-arrow-down.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 20px;height: 20px;
+    background-color: #fff;
+    border: none;
+    margin-top: 30px;
+    margin-right: 100px;
+    cursor: pointer;
+}
+.btn-active{
+    rotate: 180deg;
+}
+.btn-2, .btn-3, .btn-4, .btn-5{
+    background-image: url("images/icon-arrow-down.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 20px;height: 20px;
+    background-color: #fff;
+    border: none;
+    margin-top: 15px;
+    margin-right: 100px;
+    cursor: pointer;
+}
+.heading-para{
+    color: #a9a8ad;
+    font-size: .9rem;
+    margin-top: 15px;
+}
+.active{
+    display: none;
+}
+.faq-active{
+    height: 70px;
+    border-bottom: 1px solid #f2f2f2;
+    margin-right: 70px;
+}
+.faq-2-active , .faq-3-active, .faq-4-active, .faq-5-active{
+    height: 50px;
+    border-bottom: 1px solid #f2f2f2;
+    margin-right: 70px;
+}
+.container-active{
+    background-color: #fff;
+    width: 900px;
+    height: 530px;
+    display: flex;
+    justify-content: space-between;
+}
+.image-container-active{
+    background-image: url("images/bg-pattern-desktop.svg");
+    background-repeat: no-repeat;
+    background-position-x: -130px;
+    background-position-y: -50px;
+    background-size: 150%;
+    width: 400px;
+}
+.box-active{
+    width: 160px;
+    height: 160px;
+    margin-left: -80px;
+    margin-top: 210px;
+}
+
+@media(max-width: 555px){
+    body{
+       overflow-x: hidden;
+    }
+    .container{
+        display: block;
+        width: 450px;
+        height: 880px;
+        margin-top: 200px;
+    }
+    .container-active{
+        height: 980px;
+    }
+    .image-container{
+        background: none;
+    }
+    .image-container .images{
+        background-size: 80%;
+        display: block;
+        margin-left: 90px;
+        margin-top: -220px;
+    }
+    .head-01{
+        text-align: center;
+    }
+    .text{
+        margin-left: 0;
+        width: 480px;
+    }
+    .faq-1, .faq-2, .faq-3, .faq-4, .faq-5{
+        width: 390px;
+        margin-left: 30px;
+    }
+    .flexing{
+        width: 390px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .btn, .btn-2, .btn-3, .btn-4, .btn-5{
+        margin-right: 0;
+    }
+}
